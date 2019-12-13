@@ -1,0 +1,28 @@
+﻿@model project4.Models.Disc
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Детали</h4>
+    <hr />
+    <table class="table-condensed">
+        <tr>
+            <td>ID</td>
+            <td>Название</td>
+            <td>Исполнитель</td>
+            <td>Количество</td>
+        </tr>
+        <tr>
+            <td> @ViewBag.ID</td>
+            <td>@ViewBag.Name</td>
+            <td>@ViewBag.Artist</td>
+            <td>@ViewBag.Count</td>
+        </tr>
+    </table>
+</div>
+<p>
+<p><a href="~/Cd/Cd/">Вернуться к каталогу дисков</a></p>
