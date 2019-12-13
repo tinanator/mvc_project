@@ -1,17 +1,18 @@
 ﻿@model IEnumerable<project4.Models.Artist>
 @{
-    ViewData["Title"] = "Каталог товаров";
+    ViewData["Title"] = "Список исполнителей";
 }
-<h3>Исполнители</h3>
+
+<h1>Список исполнителей</h1>
 
 <form method="get" action="/Artist/Artist/">
     <input type="text" value="" name="text" />
     <input type="submit" value="Поиск" />
 </form>
 
-<table class="table-condensed">
+<table width="100%" class="table-condensed">
     <tr>
-        <td>Название</td>
+        <td>Имя</td>
         <td></td>
     </tr>
     @foreach (var artist in Model) {
